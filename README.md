@@ -5,4 +5,4 @@
 - added folder structure
 - added webpack
 
-deploy link: (mapty-wertypotom.netlify.app)[mapty-wertypotom.netlify.app]
+deploy link: [mapty-wertypotom.netlify.app](mapty-wertypotom.netlify.app)
