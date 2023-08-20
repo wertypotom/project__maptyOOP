@@ -16,11 +16,11 @@ export class Cycling extends Workout implements TWorkoutCycling {
     super(coords, distance, duration);
     this.elevationGain = elevationGain;
 
-    this._calcSpeed();
-    this._setDescription(this.type);
+    this.calcSpeed();
+    this.setDescription(this.type);
   }
 
-  _calcSpeed = () => {
+  private calcSpeed = () => {
     this.speed = this.distance / (this.duration / MINUTES_IN_HOUR);
     return this.speed;
   };

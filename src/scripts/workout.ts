@@ -29,7 +29,7 @@ export class Workout implements TWorkout {
     this.duration = duration; // min
   }
 
-  _setDescription = (type: string) => {
+  protected setDescription = (type: string) => {
     this.description = `${type[0].toUpperCase() + type.slice(1)} on ${
       months[this.date.getMonth()]
     } ${this.date.getDate()}`;

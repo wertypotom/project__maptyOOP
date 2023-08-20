@@ -16,3 +16,17 @@ export interface TWorkoutCycling extends TWorkout {
   type: 'cycling';
   elevationGain: number;
 }
+
+export interface WorkoutParams {
+  distance: number;
+  duration: number;
+  coords: [number, number];
+}
+
+export interface RunningParams extends WorkoutParams {
+  cadence: number;
+}
+
+export interface CyclingParams extends WorkoutParams {
+  elevation: number;
+}

@@ -15,11 +15,11 @@ export class Running extends Workout implements TWorkoutRunning {
     super(coords, distance, duration);
     this.cadence = cadence;
 
-    this._calcPace();
-    this._setDescription(this.type);
+    this.calcPace();
+    this.setDescription(this.type);
   }
 
-  _calcPace = () => {
+  private calcPace = () => {
     this.pace = this.duration / this.distance;
     return this.pace;
   };
